@@ -11,10 +11,10 @@ const int HEIGHT = 100;
 // You can add more shades by making more comparisons 
 // and assigning characters to each one
 wchar_t pixelToChar(int brightness) {
-    if (brightness < 64) return L'.';
-    if (brightness < 128) return L'-';
-    if (brightness < 192) return L'+';
-    return L'@';
+    if (brightness < 64) return L'@';
+    if (brightness < 128) return L'+';
+    if (brightness < 192) return L'-';
+    return L'.';
 }
 
 // Generate Notepad content from a video frame
