@@ -1,7 +1,15 @@
 # Bad Apple in Notepad
- shitposting because i can
+"But can it play Bad Apple?" Yes, yes it can.
+ 
+## Installation
+Install the windows executable [here](https://github.com/TreacherousDev/Bad-Apple-Notepad/releases).  
+If you are more risk averse, it is recommended that you compile it yourself using the steps below.
 
-Install the windows exe [here](https://github.com/TreacherousDev/Bad-Apple-Notepad/releases)
 
-or compile it directly from source by cloning the repo and running it in visual studio  
-you need to install opencv beforehand, you can use a package installer like vcpkg and run `vcpkg install opencv` in command prompt
+## Building from Source
+1. Clone the repo
+2. Install vcpkg and configure it as a system variable
+3. Run `vcpkg install opencv`  in the terminal
+4. Build solution and play
+   
+The compiled binary and libraries will be located in the `x64/Debug` folder. Pack it as a zip or use [Inno Setup Compiler](https://jrsoftware.org/isdl.php) to build a setup wizard.
